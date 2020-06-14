@@ -20,7 +20,7 @@
             <ColumnDefinition Width="235*"/>
             <ColumnDefinition Width="13*"/>
         </Grid.ColumnDefinitions>
-        <materialDesign:TimePicker Name="TimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="118,116,369,245" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <materialDesign:TimePicker Name="TimePicker" Is24Hours="True" SelectedTimeFormat="Short" Height="46" Margin="118,116,369,245" FontSize="25" KeyDown="TimePicker_KeyDown"/>
         <ComboBox Name="ComboBox" HorizontalAlignment="Left" Margin="120,40,0,0" VerticalAlignment="Top" Width="145" Height="40" FontSize="20" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged"/>
         <Button x:Name="UpdateButton" Content="Update Time" HorizontalAlignment="Left" Background="IndianRed" Margin="340,88,0,0" VerticalAlignment="Top" Width="170" Height="42" Click="UpdateButton_Click" FontSize="20" FontStyle="Italic" FontWeight="Bold"/>
         <Button x:Name="StartClock" Content="Start Clock" HorizontalAlignment="Left" Background="IndianRed" Margin="165,245,0,0" VerticalAlignment="Top" Width="320" Height="85" Click="StartClock_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
