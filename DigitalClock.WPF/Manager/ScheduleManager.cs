@@ -15,7 +15,7 @@ namespace DigitalClock.WPF.Manager
             return previousTime;
         }
 
-        public void WriteIntoTxtFile(string time, string prayerName)
+        public void UpdatePrayerTime(string time, string prayerName)
         {
             var filePath = _path + $"/{prayerName}.txt";
 

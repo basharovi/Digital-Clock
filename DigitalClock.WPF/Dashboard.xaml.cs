@@ -32,13 +32,13 @@ namespace DigitalClock.WPF
             dt.Tick += Dt_Tick;
 
             dt.Start();
+
+            DisplayDate.Content = DateTime.Now.ToString("dddd, dd MMMM yyyy");
         }
 
         private void Dt_Tick(object sender, EventArgs e)
         {
-            var displayTime = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss tt");
-
-            DisplayClockTextBox.Content = displayTime;
+            DisplayClock.Content = DateTime.Now.ToString("hh:mm:ss tt");
         }
 
         private void BindPrayerTimes()

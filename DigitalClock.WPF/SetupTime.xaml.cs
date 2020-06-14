@@ -50,7 +50,9 @@ namespace DigitalClock.WPF
                 string prayerName = ComboBox.Text;
                 var time = TimePicker.Text;
 
-                _scheduleManager.WriteIntoTxtFile(time, prayerName);
+                _scheduleManager.UpdatePrayerTime(time, prayerName);
+
+                MessageBox.Show("Updated Successfully");
             }
             catch (Exception ex)
             {
@@ -61,6 +63,14 @@ namespace DigitalClock.WPF
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             TimePicker.Text = _scheduleManager.GetPrayerTime(ComboBox.SelectedItem.ToString());
+        }
+
+        private void StartClock_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new Dashboard();
+
+            window.Show();
+            Hide();
         }
     }
 }
