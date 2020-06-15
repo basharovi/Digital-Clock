@@ -54,7 +54,7 @@ namespace DigitalClock.WPF.Ui
 
         private void BindColor(dynamic color)
         {
-            //DisplayDate.Foreground = color;
+            DisplayDate.Foreground = color;
             DisplayClock.Foreground = color;
 
             WhiteRadio.Foreground = color;
@@ -79,6 +79,16 @@ namespace DigitalClock.WPF.Ui
         {
             GridView.Background = Brushes.LightSkyBlue;
             BindColor(Brushes.Black);
+            WindowSizeManage();
+        }
+
+        private void WindowSizeManage()
+        {
+            var xAreaWidth = SystemParameters.WorkArea.Width;
+            var yAreaHeight =SystemParameters.WorkArea.Height;
+
+
+            var x = DisplayClock.FontStretch;
         }
 
         private void BlackRadio_Checked(object sender, RoutedEventArgs e)
