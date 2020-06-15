@@ -23,7 +23,7 @@
         <materialDesign:TimePicker Name="TimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="205,44,282,317" FontSize="25" KeyDown="TimePicker_KeyDown"/>
         <ComboBox Name="ComboBox" HorizontalAlignment="Left" Margin="40,50,0,0" VerticalAlignment="Top" Width="145" Height="40" FontSize="20" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged"/>
         <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Left" Background="DarkOrange" Margin="455,87,0,0" VerticalAlignment="Top" Width="125" Height="51" Click="UpdateButton_Click" FontSize="20" FontStyle="Italic" FontWeight="Bold"/>
-        <Button x:Name="StartClock" Content="Start Clock" HorizontalAlignment="Left" Background="DeepSkyBlue" Margin="165,245,0,0" VerticalAlignment="Top" Width="320" Height="85" Click="StartClock_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
-        <TextBox Name="NoticeTextBox" MaxLength="25" materialDesign:HintAssist.Hint="Notice" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  HorizontalAlignment="Left" Height="54" Margin="32,111,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="348" FontSize="25"/>
+        <Button x:Name="StartClock" Content="Start Clock" HorizontalAlignment="Left" Background="DeepSkyBlue" Margin="165,270,0,0" VerticalAlignment="Top" Width="320" Height="85" Click="StartClock_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBox Name="NoticeTextBox" MaxLength="30" materialDesign:HintAssist.Hint="Notice" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  HorizontalAlignment="Left" Height="54" Margin="32,111,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="348" FontSize="17.5"/>
     </Grid>
 </Window>

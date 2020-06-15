@@ -24,45 +24,58 @@ namespace DigitalClock.WPF.Ui
 
         private void InitializeClock()
         {
-            var dt = new DispatcherTimer
+            try
             {
-                Interval = TimeSpan.FromSeconds(1)
-            };
+                var dt = new DispatcherTimer
+                {
+                    Interval = TimeSpan.FromSeconds(1)
+                };
 
-            dt.Tick += Dt_Tick;
+                dt.Tick += Dt_Tick;
 
-            dt.Start();
+                dt.Start();
 
-            var timerText = new DispatcherTimer
+                var timerText = new DispatcherTimer
+                {
+                    Interval = TimeSpan.FromMilliseconds(35)
+                };
+
+                timerText.Tick += TimerText_Tick;
+
+                timerText.Start();
+
+                DisplayDate.Content = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+                DisplayNoticeBox.Content = _scheduleManager.Get("Notice");
+            }
+            catch (Exception exception)
             {
-                Interval = TimeSpan.FromMilliseconds(25)
-            };
-
-            timerText.Tick += TimerText_Tick;
-
-            timerText.Start();
-
-            DisplayDate.Content = DateTime.Now.ToString("dddd, dd MMMM yyyy");
-            
+                MessageBox.Show(exception.Message);
+            }
         }
 
         private void TimerText_Tick(object sender, EventArgs e)
         {
-            var currentMargin = DisplayDate.Margin;
+            var currentMargin = DisplayNoticeBox.Margin;
 
-            if (currentMargin.Left > Width)
+            try
             {
-                currentMargin.Left = -1 * DisplayDate.Width;
-                currentMargin.Right = Width;
-            }
-            else
-            {
-                currentMargin.Left += 5;
-                currentMargin.Right -= 5;
-            }
+                if (currentMargin.Left > Width)
+                {
+                    currentMargin.Left = -1 * DisplayNoticeBox.Width;
+                    currentMargin.Right = Width;
+                }
+                else
+                {
+                    currentMargin.Left += 5;
+                    currentMargin.Right -= 5;
+                }
 
-            DisplayDate.Margin = currentMargin;
-            
+                DisplayNoticeBox.Margin = currentMargin;
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
 
         private void Dt_Tick(object sender, EventArgs e)
@@ -72,18 +85,20 @@ namespace DigitalClock.WPF.Ui
 
         private void BindPrayerTimes()
         {
-            FajrTextBox.Content = _scheduleManager.GetPrayerTime("Fajr");
-            DuhrTextBox.Content = _scheduleManager.GetPrayerTime("Duhr");
-            AsrTextBox.Content = _scheduleManager.GetPrayerTime("Asr");
-            MagribTextBox.Content = _scheduleManager.GetPrayerTime("Magrib");
-            IchaTextBox.Content = _scheduleManager.GetPrayerTime("Isha");
-            JummaTextBox.Content = _scheduleManager.GetPrayerTime("Jumma");
+            FajrTextBox.Content = _scheduleManager.Get("Fajr");
+            DuhrTextBox.Content = _scheduleManager.Get("Duhr");
+            AsrTextBox.Content = _scheduleManager.Get("Asr");
+            MagribTextBox.Content = _scheduleManager.Get("Magrib");
+            IchaTextBox.Content = _scheduleManager.Get("Isha");
+            JummaTextBox.Content = _scheduleManager.Get("Jumma");
         }
 
         private void BindColor(dynamic color)
         {
             DisplayDate.Foreground = color;
             DisplayClock.Foreground = color;
+
+            if (DisplayNoticeBox != null) DisplayNoticeBox.Foreground = color;
 
             WhiteRadio.Foreground = color;
             BlackRadio.Foreground = color;

@@ -13,8 +13,9 @@ namespace DigitalClock.WPF.Ui
     public partial class SetupTime
     {
         private readonly ScheduleManager _scheduleManager;
+        private const string NoticeFileName = "Notice";
 
-        enum Prayers
+        private enum Prayers
         {
             Jumma,
             Fajr,
@@ -35,6 +36,7 @@ namespace DigitalClock.WPF.Ui
         private void BindUi()
         {
             ComboBox.ItemsSource = Enum.GetValues(typeof(Prayers)).Cast<Prayers>();
+            NoticeTextBox.Text = _scheduleManager.Get(NoticeFileName);
         }
 
         private void TimePicker_KeyDown(object sender, KeyEventArgs e)
@@ -46,10 +48,13 @@ namespace DigitalClock.WPF.Ui
         {
             try
             {
-                string prayerName = ComboBox.Text;
+                var prayerName = ComboBox.Text;
                 var time = TimePicker.Text;
 
-                _scheduleManager.UpdatePrayerTime(time, prayerName);
+                _scheduleManager.Update(time, prayerName);
+
+                var text = NoticeTextBox.Text;
+                _scheduleManager.Update(text, NoticeFileName);
 
                 MessageBox.Show("Updated Successfully");
             }
@@ -61,7 +66,7 @@ namespace DigitalClock.WPF.Ui
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            TimePicker.Text = _scheduleManager.GetPrayerTime(ComboBox.SelectedItem.ToString());
+            TimePicker.Text = _scheduleManager.Get(ComboBox.SelectedItem.ToString());
         }
 
         private void StartClock_Click(object sender, RoutedEventArgs e)

@@ -9,8 +9,8 @@
     <Viewbox Stretch="Fill">
         <Grid Name="GridView" Margin="0,0,-69,2" Background="LightSkyBlue" Height="670">
 
-            <Label x:Name="DisplayClock" Content="03:33:33 PM" HorizontalAlignment="Stretch" Margin="80,207,225,223" VerticalAlignment="Stretch" FontSize="175" FontStyle="Italic" FontFamily="Bookman Old Style"/>
-            <Label x:Name="DisplayDate" Width="475" Margin="170,142,730,439" Content="Sunday, 24 December, 2020" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontWeight="Bold" FontStyle="Italic"/>
+            <Label x:Name="DisplayClock" Content="03:33:33 PM" HorizontalAlignment="Stretch" Margin="102,209,203,221" VerticalAlignment="Stretch" FontSize="175" FontStyle="Italic" FontFamily="Bookman Old Style"/>
+            <Label x:Name="DisplayDate" Width="475" Margin="181,148,741,457" Content="Sunday, 24 December, 2020" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontWeight="Bold" FontStyle="Italic"/>
             <Label x:Name="FajrTB" Content="Fajr" HorizontalAlignment="Stretch" Margin="170,498,1136,117" VerticalAlignment="Stretch" Height="55" Width="72" FontSize="30" FontWeight="Bold"/>
             <Label x:Name="DuhrTB" Content="Duhr" HorizontalAlignment="Stretch" Margin="332,496,960,118" VerticalAlignment="Stretch" Height="55" Width="86" FontSize="30" FontWeight="Bold"/>
             <Label x:Name="AsrTB" Content="Asr" HorizontalAlignment="Stretch" Margin="523,498,770,117" VerticalAlignment="Stretch" Height="55" Width="85" FontSize="30" FontWeight="Bold"/>
@@ -25,6 +25,7 @@
             <Label x:Name="JummaTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="1006,550,227,65" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
             <RadioButton x:Name="BlackRadio" Content="Black" HorizontalAlignment="Stretch" Margin="1156,27,132,0" VerticalAlignment="Top" Height="21" Width="60" Checked="BlackRadio_Checked"/>
             <RadioButton x:Name="WhiteRadio" Content="Light" HorizontalAlignment="Stretch" Margin="1073,25,208,0" VerticalAlignment="top" Height="25" Width="67" IsChecked="True" Checked="WhiteRadio_Checked"/>
+            <Label x:Name="DisplayNoticeBox" Margin="116,56,806,549" Width="475" Content="Important Notice !!" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontFamily="Calibri" FontStyle="Italic" FontWeight="Bold"/>
 
         </Grid>
     </Viewbox>

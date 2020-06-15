@@ -6,22 +6,22 @@ namespace DigitalClock.WPF.Manager
     {
         readonly string _path = Directory.GetCurrentDirectory() + "/DB";
 
-        public string GetPrayerTime(string prayerName)
+        public string Get(string fileName)
         {
-            var filePath = _path + $"/{prayerName}.txt";
+            var filePath = _path + $"/{fileName}.txt";
 
             var previousTime = File.ReadAllText(filePath);
 
             return previousTime;
         }
 
-        public void UpdatePrayerTime(string time, string prayerName)
+        public void Update(string text, string fileName)
         {
-            var filePath = _path + $"/{prayerName}.txt";
+            var filePath = _path + $"/{fileName}.txt";
 
             using (var writer = new StreamWriter(filePath))
             {
-                writer.WriteLine(time);
+                writer.WriteLine(text);
             }
         }
     }
