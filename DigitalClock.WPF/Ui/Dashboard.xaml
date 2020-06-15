@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="Dashboard" Height="550" Width="1049"
-        ResizeMode="CanResize" WindowState="Normal" WindowStartupLocation="CenterScreen">
+        ResizeMode="CanResize" WindowState="Maximized" WindowStartupLocation="CenterScreen">
     <Viewbox Stretch="Fill">
         <Grid Name="GridView" Margin="0,0,-69,2" Background="LightSkyBlue" Height="670">
 
             <Label x:Name="DisplayClock" Content="03:33:33 PM" HorizontalAlignment="Stretch" Margin="80,207,225,223" VerticalAlignment="Stretch" FontSize="175" FontStyle="Italic" FontFamily="Bookman Old Style"/>
-            <Label x:Name="DisplayDate" Content="Sunday, 24 December, 2020" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontWeight="Bold" FontStyle="Italic" Margin="143,113,721,468"/>
+            <Label x:Name="DisplayDate" Width="475" Margin="170,142,730,439" Content="Sunday, 24 December, 2020" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontWeight="Bold" FontStyle="Italic"/>
             <Label x:Name="FajrTB" Content="Fajr" HorizontalAlignment="Stretch" Margin="170,498,1136,117" VerticalAlignment="Stretch" Height="55" Width="72" FontSize="30" FontWeight="Bold"/>
             <Label x:Name="DuhrTB" Content="Duhr" HorizontalAlignment="Stretch" Margin="332,496,960,118" VerticalAlignment="Stretch" Height="55" Width="86" FontSize="30" FontWeight="Bold"/>
             <Label x:Name="AsrTB" Content="Asr" HorizontalAlignment="Stretch" Margin="523,498,770,117" VerticalAlignment="Stretch" Height="55" Width="85" FontSize="30" FontWeight="Bold"/>

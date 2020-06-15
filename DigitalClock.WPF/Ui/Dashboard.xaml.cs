@@ -33,7 +33,35 @@ namespace DigitalClock.WPF.Ui
 
             dt.Start();
 
+            var timerText = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromMilliseconds(25)
+            };
+
+            timerText.Tick += TimerText_Tick;
+
+            timerText.Start();
+
             DisplayDate.Content = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            
+        }
+
+        private void TimerText_Tick(object sender, EventArgs e)
+        {
+            var currentMargin = DisplayDate.Margin;
+
+            if (currentMargin.Left > Width)
+            {
+                currentMargin.Left = -1 * DisplayDate.Width;
+                currentMargin.Right = Width;
+            }
+            else
+            {
+                currentMargin.Left += 5;
+                currentMargin.Right -= 5;
+            }
+
+            DisplayDate.Margin = currentMargin;
             
         }
 
@@ -79,17 +107,8 @@ namespace DigitalClock.WPF.Ui
         {
             GridView.Background = Brushes.LightSkyBlue;
             BindColor(Brushes.Black);
-            WindowSizeManage();
         }
 
-        private void WindowSizeManage()
-        {
-            var xAreaWidth = SystemParameters.WorkArea.Width;
-            var yAreaHeight =SystemParameters.WorkArea.Height;
-
-
-            var x = DisplayClock.FontStretch;
-        }
 
         private void BlackRadio_Checked(object sender, RoutedEventArgs e)
         {
