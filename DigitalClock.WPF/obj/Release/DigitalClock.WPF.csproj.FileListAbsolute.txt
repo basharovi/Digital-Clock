@@ -21,3 +21,27 @@ C:\Users\PRPC-05\Downloads\Digital Clock in C#\Digital Clock\DigitalClock.WPF\ob
 C:\Users\PRPC-05\Downloads\Digital Clock in C#\Digital Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.csproj.CopyComplete
 C:\Users\PRPC-05\Downloads\Digital Clock in C#\Digital Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.exe
 C:\Users\PRPC-05\Downloads\Digital Clock in C#\Digital Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.pdb
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\bin\Release\DigitalClock.WPF.exe.config
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\bin\Release\DigitalClock.WPF.exe
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\bin\Release\DigitalClock.WPF.pdb
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\bin\Release\MaterialDesignColors.dll
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\bin\Release\MaterialDesignThemes.Wpf.dll
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\bin\Release\MaterialDesignColors.pdb
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\bin\Release\MaterialDesignThemes.Wpf.pdb
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\bin\Release\MaterialDesignThemes.Wpf.xml
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.csprojAssemblyReference.cache
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\Dashboard.baml
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\Dashboard.g.cs
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\SetupTime.g.cs
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\App.g.cs
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF_MarkupCompile.cache
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF_MarkupCompile.lref
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\App.baml
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\SetupTime.baml
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.g.resources
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.Properties.Resources.resources
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.csproj.GenerateResource.cache
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.csproj.CoreCompileInputs.cache
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.csproj.CopyComplete
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.exe
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.pdb
