@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Linq;
 using System.Windows;
-using System.Windows.Input;
 using System.Windows.Controls;
+using System.Windows.Input;
 using DigitalClock.WPF.Manager;
 
-namespace DigitalClock.WPF
+namespace DigitalClock.WPF.Ui
 {
     /// <summary>
     /// Interaction logic for SetupTime.xaml
     /// </summary>
-    public partial class SetupTime : Window
+    public partial class SetupTime
     {
         private readonly ScheduleManager _scheduleManager;
 

@@ -4,13 +4,12 @@ using System.Windows.Media;
 using System.Windows.Threading;
 using DigitalClock.WPF.Manager;
 
-
-namespace DigitalClock.WPF
+namespace DigitalClock.WPF.Ui
 {
     /// <summary>
     /// Interaction logic for Dashboard.xaml
     /// </summary>
-    public partial class Dashboard : Window
+    public partial class Dashboard
     {
         private readonly ScheduleManager _scheduleManager;
 
@@ -55,7 +54,7 @@ namespace DigitalClock.WPF
 
         private void BindColor(dynamic color)
         {
-            DisplayDate.Foreground = color;
+            //DisplayDate.Foreground = color;
             DisplayClock.Foreground = color;
 
             WhiteRadio.Foreground = color;

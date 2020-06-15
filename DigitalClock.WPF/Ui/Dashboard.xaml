@@ -1,0 +1,28 @@
+﻿<Window x:Class="DigitalClock.WPF.Ui.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Dashboard" Height="550" Width="1049"
+        ResizeMode="CanResize" WindowState="Normal" WindowStartupLocation="CenterScreen">
+    <Grid Name="GridView" Margin="0,0,-69,2" Background="LightSkyBlue">
+        <Label x:Name="DisplayClock" Content="03:33:33 PM" HorizontalAlignment="Stretch" Margin="214,150,180,217" VerticalAlignment="Stretch" Height="150" Width="650" FontSize="100" FontStyle="Italic" FontFamily="Bookman Old Style"/>
+        <Label x:Name="DisplayDate" Content="Sunday, 24 December, 2020" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="65" Width="410" FontSize="30" FontWeight="Bold" FontStyle="Italic" Margin="30,64,541,390"/>
+        <Label x:Name="FajrTB" Content="Fajr" HorizontalAlignment="Stretch" Margin="63,355,975,107" VerticalAlignment="Stretch" Height="55" Width="72" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="DuhrTB" Content="Duhr" HorizontalAlignment="Stretch" Margin="225,354,799,108" VerticalAlignment="Stretch" Height="55" Width="86" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="AsrTB" Content="Asr" HorizontalAlignment="Stretch" Margin="415,355,610,107" VerticalAlignment="Stretch" Height="55" Width="85" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="MagribTB" Content="Magrib" HorizontalAlignment="Stretch" Margin="572,355,423,107" VerticalAlignment="Stretch" Height="55" Width="115" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="IshaTB" Content="Isha" HorizontalAlignment="Stretch" Margin="749,356,293,105" VerticalAlignment="Stretch" Height="55" Width="68" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="FajrTextBox" Content="04:45 AM" HorizontalAlignment="Stretch" Margin="35,418,925,44" VerticalAlignment="Stretch" Height="55" Width="150" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="DuhrTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="203,419,762,43" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="AsrTextBox" Content="05:15 PM" HorizontalAlignment="Stretch" Margin="377,420,583,42" VerticalAlignment="Stretch" Height="55" Width="150" FontSize="30" RenderTransformOrigin="0.6,0.545" FontWeight="Bold"/>
+        <Label x:Name="MagribTextBox" Content="06:50 PM" HorizontalAlignment="Stretch" Margin="559,420,399,42" VerticalAlignment="Stretch" Height="55" Width="152" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="IchaTextBox" Content="08:45 PM" HorizontalAlignment="Stretch" Margin="724,421,241,41" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="JummaTB" Content="Jumma" HorizontalAlignment="Stretch" Margin="896,358,89,104" VerticalAlignment="Stretch" Height="55" Width="125" FontSize="30" FontWeight="Bold"/>
+        <Label x:Name="JummaTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="886,419,79,43" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
+        <RadioButton x:Name="BlackRadio" Content="Black" HorizontalAlignment="Stretch" Margin="944,28,106,0" VerticalAlignment="Top" Height="21" Width="60" Checked="BlackRadio_Checked"/>
+        <RadioButton x:Name="WhiteRadio" Content="Light" HorizontalAlignment="Stretch" Margin="876,25,167,0" VerticalAlignment="top" Height="25" Width="67" IsChecked="True" Checked="WhiteRadio_Checked"/>
+
+    </Grid>
+</Window>

@@ -64,10 +64,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Manager\ScheduleManager.cs" />
-    <Compile Include="SetupTime.xaml.cs">
+    <Compile Include="Ui\SetupTime.xaml.cs">
       <DependentUpon>SetupTime.xaml</DependentUpon>
     </Compile>
-    <Page Include="Dashboard.xaml">
+    <Page Include="Ui\Dashboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -75,10 +75,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Dashboard.xaml.cs">
+    <Compile Include="Ui\Dashboard.xaml.cs">
       <DependentUpon>Dashboard.xaml</DependentUpon>
     </Compile>
-    <Page Include="SetupTime.xaml">
+    <Page Include="Ui\SetupTime.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
