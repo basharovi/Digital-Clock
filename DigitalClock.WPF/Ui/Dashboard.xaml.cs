@@ -20,6 +20,7 @@ namespace DigitalClock.WPF.Ui
 
             InitializeClock();
             BindPrayerTimes();
+            BindBackgroundColor();
         }
 
         private void InitializeClock()
@@ -100,9 +101,6 @@ namespace DigitalClock.WPF.Ui
 
             if (DisplayNoticeBox != null) DisplayNoticeBox.Foreground = color;
 
-            WhiteRadio.Foreground = color;
-            BlackRadio.Foreground = color;
-
             FajrTextBox.Foreground = color;
             DuhrTextBox.Foreground = color;
             AsrTextBox.Foreground = color;
@@ -118,15 +116,13 @@ namespace DigitalClock.WPF.Ui
             JummaTB.Foreground = color;
         }
 
-        private void WhiteRadio_Checked(object sender, RoutedEventArgs e)
+        private void BindBackgroundColor()
         {
-            GridView.Background = Brushes.LightSkyBlue;
-            BindColor(Brushes.Black);
-        }
+            var bgColor = _scheduleManager.Get("BgColor");
 
+            if (!bgColor.Equals("Black"))
+                return;
 
-        private void BlackRadio_Checked(object sender, RoutedEventArgs e)
-        {
             GridView.Background = Brushes.Black;
             BindColor(Brushes.White);
         }

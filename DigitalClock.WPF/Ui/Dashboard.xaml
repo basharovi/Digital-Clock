@@ -23,9 +23,7 @@
             <Label x:Name="IchaTextBox" Content="08:45 PM" HorizontalAlignment="Stretch" Margin="832,552,401,63" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
             <Label x:Name="JummaTB" Content="Jumma" HorizontalAlignment="Stretch" Margin="1018,500,235,114" VerticalAlignment="Stretch" Height="55" Width="125" FontSize="30" FontWeight="Bold"/>
             <Label x:Name="JummaTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="1006,550,227,65" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
-            <RadioButton x:Name="BlackRadio" Content="Black" HorizontalAlignment="Stretch" Margin="1156,27,132,0" VerticalAlignment="Top" Height="21" Width="60" Checked="BlackRadio_Checked"/>
-            <RadioButton x:Name="WhiteRadio" Content="Light" HorizontalAlignment="Stretch" Margin="1073,25,208,0" VerticalAlignment="top" Height="25" Width="67" IsChecked="True" Checked="WhiteRadio_Checked"/>
-            <Label x:Name="DisplayNoticeBox" Margin="116,56,806,549" Width="475" Content="Important Notice !!" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontFamily="Calibri" FontStyle="Italic" FontWeight="Bold"/>
+            <Label x:Name="DisplayNoticeBox" Margin="116,56,702,549" Width="500" Content="Important Notice !!" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontFamily="Calibri" FontStyle="Italic" FontWeight="Bold"/>
 
         </Grid>
     </Viewbox>
