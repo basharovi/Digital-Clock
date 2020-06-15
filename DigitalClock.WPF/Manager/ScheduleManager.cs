@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 
 namespace DigitalClock.WPF.Manager
 {
@@ -22,6 +23,18 @@ namespace DigitalClock.WPF.Manager
             using (var writer = new StreamWriter(filePath))
             {
                 writer.WriteLine(text);
+            }
+        }
+        public void Update(Dictionary<string,string> modeDictionary)
+        {
+            foreach (var d in modeDictionary)
+            {
+                var filePath = _path + $"/{d.Key}.txt";
+
+                using (var writer = new StreamWriter(filePath))
+                {
+                    writer.WriteLine(d.Value);
+                }
             }
         }
     }

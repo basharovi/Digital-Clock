@@ -3,28 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         TextElement.FontWeight="Regular"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+
         mc:Ignorable="d"
-        Title="Dashboard" Height="550" Width="1049"
-        ResizeMode="CanResize" WindowState="Maximized" WindowStartupLocation="CenterScreen">
-    <Viewbox Stretch="Fill">
-        <Grid Name="GridView" Margin="0,0,-69,2" Background="LightSkyBlue" Height="670">
-
-            <Label x:Name="DisplayClock" Content="03:33:33 PM" HorizontalAlignment="Stretch" Margin="102,209,203,221" VerticalAlignment="Stretch" FontSize="175" FontStyle="Italic" FontFamily="Bookman Old Style"/>
-            <Label x:Name="DisplayDate" Width="475" Margin="181,148,741,457" Content="Sunday, 24 December, 2020" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontWeight="Bold" FontStyle="Italic"/>
-            <Label x:Name="FajrTB" Content="Fajr" HorizontalAlignment="Stretch" Margin="170,498,1136,117" VerticalAlignment="Stretch" Height="55" Width="72" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="DuhrTB" Content="Duhr" HorizontalAlignment="Stretch" Margin="332,496,960,118" VerticalAlignment="Stretch" Height="55" Width="86" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="AsrTB" Content="Asr" HorizontalAlignment="Stretch" Margin="523,498,770,117" VerticalAlignment="Stretch" Height="55" Width="85" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="MagribTB" Content="Magrib" HorizontalAlignment="Stretch" Margin="680,498,583,117" VerticalAlignment="Stretch" Height="55" Width="115" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="IshaTB" Content="Isha" HorizontalAlignment="Stretch" Margin="856,499,454,116" VerticalAlignment="Stretch" Height="55" Width="68" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="FajrTextBox" Content="04:45 AM" HorizontalAlignment="Stretch" Margin="143,548,1085,66" VerticalAlignment="Stretch" Height="55" Width="150" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="DuhrTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="311,550,922,65" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="AsrTextBox" Content="05:15 PM" HorizontalAlignment="Stretch" Margin="485,550,743,64" VerticalAlignment="Stretch" Height="55" Width="150" FontSize="30" RenderTransformOrigin="0.6,0.545" FontWeight="Bold"/>
-            <Label x:Name="MagribTextBox" Content="06:50 PM" HorizontalAlignment="Stretch" Margin="667,550,559,64" VerticalAlignment="Stretch" Height="55" Width="152" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="IchaTextBox" Content="08:45 PM" HorizontalAlignment="Stretch" Margin="832,552,401,63" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="JummaTB" Content="Jumma" HorizontalAlignment="Stretch" Margin="1018,500,235,114" VerticalAlignment="Stretch" Height="55" Width="125" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="JummaTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="1006,550,227,65" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="DisplayNoticeBox" Margin="116,56,702,549" Width="500" Content="Important Notice !!" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontFamily="Calibri" FontStyle="Italic" FontWeight="Bold"/>
-
-        </Grid>
-    </Viewbox>
+        WindowStartupLocation="CenterScreen"
+        Title="Dashboard" Height="450" Width="739">
+    <Grid>
+        <Button x:Name="StartButton" Content="Start Clock" HorizontalAlignment="Left" Background="LightSeaGreen" Margin="200,74,0,0" VerticalAlignment="Top" Width="295" Height="100" Click="StartButton_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
+        <Button x:Name="SettingButton" Content="Settings" HorizontalAlignment="Left" Background="DarkKhaki" Margin="200,231,0,0" VerticalAlignment="Top" Width="295" Height="100" Click="SettingButton_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
+    </Grid>
 </Window>

@@ -4,26 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
          TextElement.FontWeight="Regular"
-         TextElement.FontSize="13"
          TextOptions.TextFormattingMode="Ideal"
          TextOptions.TextRenderingMode="Auto"
-         Background="{DynamicResource MaterialDesignPaper}"
-         FontFamily="{DynamicResource MaterialDesignFont}"
         xmlns:local="clr-namespace:DigitalClock.WPF"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="SetupTime" Height="450" Width="679">
-    <Grid Margin="0,0,2,12">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="235*"/>
-            <ColumnDefinition Width="13*"/>
-        </Grid.ColumnDefinitions>
-        <materialDesign:TimePicker Name="TimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="205,44,282,317" FontSize="25" KeyDown="TimePicker_KeyDown"/>
-        <ComboBox Name="ComboBox" HorizontalAlignment="Left" Margin="40,50,0,0" VerticalAlignment="Top" Width="145" Height="40" FontSize="20" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged"/>
-        <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Left" Background="DarkOrange" Margin="455,87,0,0" VerticalAlignment="Top" Width="125" Height="51" Click="UpdateButton_Click" FontSize="20" FontStyle="Italic" FontWeight="Bold"/>
-        <Button x:Name="StartClock" Content="Start Clock" HorizontalAlignment="Left" Background="DeepSkyBlue" Margin="165,270,0,0" VerticalAlignment="Top" Width="320" Height="85" Click="StartClock_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
-        <TextBox Name="NoticeTextBox" MaxLength="30" materialDesign:HintAssist.Hint="Notice" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  HorizontalAlignment="Left" Height="54" Margin="32,111,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="348" FontSize="17.5"/>
+        Title="SetupTime" Height="599" Width="999">
+    <Grid>
+        <materialDesign:TimePicker Name="FajrTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="124,66,716,456" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Left" Background="DarkKhaki" Margin="355,410,0,0" VerticalAlignment="Top" Width="251" Height="80" Click="UpdateButton_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBox Name="NoticeTextBox" MaxLength="50" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  HorizontalAlignment="Left" Height="54" Margin="205,290,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="370" FontSize="17.5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,69,0,0" TextWrapping="Wrap" Text="Fajr" VerticalAlignment="Top" Height="34" Width="45" FontSize="25"/>
+        <materialDesign:TimePicker x:Name="DurhTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="462,70,376,452" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="394,69,0,0" TextWrapping="Wrap" Text="Duhr" VerticalAlignment="Top" Height="31" Width="63" FontSize="25"/>
+        <materialDesign:TimePicker x:Name="MagribTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="124,148,716,374" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,148,0,0" TextWrapping="Wrap" Text="Magrib" VerticalAlignment="Top" Height="38" Width="89" FontSize="25"/>
+        <materialDesign:TimePicker x:Name="IshaTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="462,151,376,371" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="406,151,0,0" TextWrapping="Wrap" Text="Isha" VerticalAlignment="Top" Height="35" Width="51" FontSize="25"/>
+        <materialDesign:TimePicker x:Name="AsrTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="784,70,53,452" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="738,70,0,0" TextWrapping="Wrap" Text="Asr" VerticalAlignment="Top" Height="35" Width="41" FontSize="25"/>
+        <materialDesign:TimePicker x:Name="JummaTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="787,151,53,371" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="697,151,0,0" TextWrapping="Wrap" Text="Jumma" VerticalAlignment="Top" Height="40" Width="82" FontSize="25"/>
+        <RadioButton Name="RadioLight" Content="Light" HorizontalAlignment="Left" Margin="734,292,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="RadioBlack" Content="Black" HorizontalAlignment="Left" Margin="734,329,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,306,0,0" TextWrapping="Wrap" Text="Notice" VerticalAlignment="Top" Height="38" Width="89" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="645,307,0,0" TextWrapping="Wrap" Text="Color" VerticalAlignment="Top" Height="38" Width="89" FontSize="25"/>
+        <Button Name="BackButton" Content="Back" Background="MediumSeaGreen" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Width="65" Height="30" FontSize="12" FontStyle="Italic" FontWeight="Bold" Click="BackButton_Click"/>
     </Grid>
 </Window>

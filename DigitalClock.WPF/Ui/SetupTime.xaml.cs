@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
 using DigitalClock.WPF.Manager;
 
@@ -13,17 +12,6 @@ namespace DigitalClock.WPF.Ui
     public partial class SetupTime
     {
         private readonly ScheduleManager _scheduleManager;
-        private const string NoticeFileName = "Notice";
-
-        private enum Prayers
-        {
-            Jumma,
-            Fajr,
-            Duhr,
-            Asr,
-            Magrib,
-            Isha,
-        }
 
         public SetupTime()
         {
@@ -35,8 +23,24 @@ namespace DigitalClock.WPF.Ui
 
         private void BindUi()
         {
-            ComboBox.ItemsSource = Enum.GetValues(typeof(Prayers)).Cast<Prayers>();
-            NoticeTextBox.Text = _scheduleManager.Get(NoticeFileName);
+            FajrTimePicker.Text = _scheduleManager.Get("Fajr");
+            DurhTimePicker.Text = _scheduleManager.Get("Duhr");
+            AsrTimePicker.Text = _scheduleManager.Get("Asr");
+            MagribTimePicker.Text = _scheduleManager.Get("Magrib");
+            IshaTimePicker.Text = _scheduleManager.Get("Isha");
+            JummaTimePicker.Text = _scheduleManager.Get("Jumma");
+
+            NoticeTextBox.Text = _scheduleManager.Get("Notice");
+
+            if (_scheduleManager.Get("BgColor").Contains("Black"))
+            {
+                RadioBlack.IsChecked = true;
+            }
+            else
+            {
+                RadioLight.IsChecked = true;
+            }
+
         }
 
         private void TimePicker_KeyDown(object sender, KeyEventArgs e)
@@ -48,13 +52,20 @@ namespace DigitalClock.WPF.Ui
         {
             try
             {
-                var prayerName = ComboBox.Text;
-                var time = TimePicker.Text;
+                var model = new Dictionary<string, string>
+                {
+                    { "Fajr", FajrTimePicker.Text },
+                    { "Duhr", DurhTimePicker.Text },
+                    { "Asr", AsrTimePicker.Text },
+                    { "Magrib", MagribTimePicker.Text },
+                    { "Isha", IshaTimePicker.Text },
+                    { "Jumma", JummaTimePicker.Text },
 
-                _scheduleManager.Update(time, prayerName);
+                    { "Notice", NoticeTextBox.Text },
+                    { "BgColor", RadioBlack.IsChecked == true ? "Black" : string.Empty }
+                };
 
-                var text = NoticeTextBox.Text;
-                _scheduleManager.Update(text, NoticeFileName);
+                _scheduleManager.Update(model);
 
                 MessageBox.Show("Updated Successfully");
             }
@@ -64,16 +75,11 @@ namespace DigitalClock.WPF.Ui
             }
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            TimePicker.Text = _scheduleManager.Get(ComboBox.SelectedItem.ToString());
-        }
+            var dashboard = new Dashboard();
 
-        private void StartClock_Click(object sender, RoutedEventArgs e)
-        {
-            var window = new Dashboard();
-
-            window.Show();
+            dashboard.Show();
             Hide();
         }
     }
