@@ -1,0 +1,35 @@
+﻿<Window x:Class="DigitalClock.WPF.Ui.SetupTimeBangla"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         TextElement.FontWeight="Regular"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+        xmlns:local="clr-namespace:DigitalClock.WPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="SetupTime" Height="599" Width="999">
+    <Grid>
+        <materialDesign:TimePicker Name="FajrTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="124,66,716,456" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <Button x:Name="UpdateButton" Content="Update" HorizontalAlignment="Left" Background="DarkKhaki" Margin="355,410,0,0" VerticalAlignment="Top" Width="251" Height="80" Click="UpdateButton_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBox Name="NoticeTextBox" MaxLength="50" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  HorizontalAlignment="Left" Height="54" Margin="188,290,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="370" FontSize="17.5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,69,0,0" TextWrapping="Wrap" Text="ফজর" VerticalAlignment="Top" Height="34" Width="74" FontSize="25"/>
+        <materialDesign:TimePicker x:Name="DurhTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="462,70,376,452" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="384,69,0,0" TextWrapping="Wrap" Text="যোহর" VerticalAlignment="Top" Height="31" Width="73" FontSize="25"/>
+        <materialDesign:TimePicker x:Name="MagribTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="124,148,716,374" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="65" FontSize="25" Text="আসর"/>
+        <materialDesign:TimePicker x:Name="IshaTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="462,151,376,371" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="368,152,0,0" TextWrapping="Wrap" Text="মাগরিব" VerticalAlignment="Top" Height="35" Width="90" FontSize="25" RenderTransformOrigin="0.333,0.686"/>
+        <materialDesign:TimePicker x:Name="AsrTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="784,70,53,452" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="699,73,0,0" TextWrapping="Wrap" Text="আসর" VerticalAlignment="Top" Height="35" Width="76" FontSize="25"/>
+        <materialDesign:TimePicker x:Name="JummaTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="787,151,53,371" FontSize="25" KeyDown="TimePicker_KeyDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="710,151,0,0" TextWrapping="Wrap" Text="জুম্মা" VerticalAlignment="Top" Height="40" Width="63" FontSize="25"/>
+        <RadioButton Name="RadioLight" Content="নীল" HorizontalAlignment="Left" Margin="734,292,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="RadioBlack" Content="কালো" HorizontalAlignment="Left" Margin="734,329,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,306,0,0" TextWrapping="Wrap" Text="নোটিশ" VerticalAlignment="Top" Height="38" Width="89" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="645,307,0,0" TextWrapping="Wrap" Text="কালার" VerticalAlignment="Top" Height="38" Width="89" FontSize="25"/>
+        <Button Name="BackButton" Content="Back" Background="MediumSeaGreen" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top" Width="65" Height="30" FontSize="12" FontStyle="Italic" FontWeight="Bold" Click="BackButton_Click"/>
+    </Grid>
+</Window>

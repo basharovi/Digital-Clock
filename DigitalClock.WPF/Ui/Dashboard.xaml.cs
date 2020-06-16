@@ -22,7 +22,7 @@ namespace DigitalClock.WPF.Ui
 
         private void SettingButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new SetupTime();
+            var window = new SetupTimeBangla();
 
             window.Show();
             Hide();

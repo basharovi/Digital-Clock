@@ -48,3 +48,5 @@ E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Debug\DigitalClock.WPF.cspr
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Debug\DigitalClock.WPF.csproj.CopyComplete
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Debug\DigitalClock.WPF.exe
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Debug\DigitalClock.WPF.pdb
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Debug\Ui\SetupTimeBangla.g.cs
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Debug\Ui\SetupTimeBangla.baml
