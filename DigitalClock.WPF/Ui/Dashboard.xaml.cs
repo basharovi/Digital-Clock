@@ -14,17 +14,33 @@ namespace DigitalClock.WPF.Ui
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new DisplayClock();
-
-            window.Show();
+            if (RadioEnglish.IsChecked == true)
+            {
+                var window = new DisplayClock();
+                window.Show();
+            }
+            else
+            {
+                var window = new DisplayClockBangla();
+                window.Show();
+            }
+            
             Hide();
         }
 
         private void SettingButton_Click(object sender, RoutedEventArgs e)
         {
-            var window = new SetupTimeBangla();
+            if (RadioEnglish.IsChecked == true)
+            {
+                var window = new SetupTime();
+                window.Show();
+            }
+            else
+            {
+                var window = new SetupTimeBangla();
+                window.Show();
+            }
 
-            window.Show();
             Hide();
         }
     }

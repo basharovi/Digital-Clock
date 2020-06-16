@@ -67,12 +67,19 @@
     <Compile Include="Ui\Dashboard.xaml.cs">
       <DependentUpon>Dashboard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Ui\DisplayClockBangla.xaml.cs">
+      <DependentUpon>DisplayClockBangla.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Ui\SetupTimeBangla.xaml.cs">
       <DependentUpon>SetupTimeBangla.xaml</DependentUpon>
     </Compile>
     <Compile Include="Ui\SetupTime.xaml.cs">
       <DependentUpon>SetupTime.xaml</DependentUpon>
     </Compile>
+    <Page Include="Ui\DisplayClockBangla.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Ui\DisplayClock.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

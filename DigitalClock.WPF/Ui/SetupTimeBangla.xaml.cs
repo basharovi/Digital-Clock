@@ -30,7 +30,7 @@ namespace DigitalClock.WPF.Ui
             IshaTimePicker.Text = _scheduleManager.Get("Isha");
             JummaTimePicker.Text = _scheduleManager.Get("Jumma");
 
-            NoticeTextBox.Text = _scheduleManager.Get("Notice");
+            NoticeTextBox.Text = _scheduleManager.Get("NoticeBangla");
 
             if (_scheduleManager.Get("BgColor").Contains("Black"))
             {
@@ -61,11 +61,11 @@ namespace DigitalClock.WPF.Ui
                     { "Isha", IshaTimePicker.Text },
                     { "Jumma", JummaTimePicker.Text },
 
-                    { "Notice", NoticeTextBox.Text },
+                    { "NoticeBangla", NoticeTextBox.Text },
                     { "BgColor", RadioBlack.IsChecked == true ? "Black" : string.Empty }
                 };
 
-                _scheduleManager.Update(model);
+                _scheduleManager.Update( model);
 
                 MessageBox.Show("Updated Successfully");
             }

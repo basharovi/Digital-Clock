@@ -14,5 +14,7 @@
     <Grid>
         <Button x:Name="StartButton" Content="Start Clock" HorizontalAlignment="Left" Background="LightSeaGreen" Margin="200,74,0,0" VerticalAlignment="Top" Width="295" Height="100" Click="StartButton_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
         <Button x:Name="SettingButton" Content="Settings" HorizontalAlignment="Left" Background="DarkKhaki" Margin="200,231,0,0" VerticalAlignment="Top" Width="295" Height="100" Click="SettingButton_Click" FontSize="35" FontStyle="Italic" FontWeight="Bold"/>
+        <RadioButton Name="RadioBanla" Content="Bangla" HorizontalAlignment="Left" Margin="632,32,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="RadioEnglish" Content="English" HorizontalAlignment="Left" Margin="550,32,0,0" VerticalAlignment="Top" IsChecked="True"/>
     </Grid>
 </Window>
