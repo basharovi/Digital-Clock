@@ -126,5 +126,25 @@ namespace DigitalClock.WPF.Ui
             GridView.Background = Brushes.Black;
             BindColor(Brushes.White);
         }
+
+        private void Window_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            try
+            {
+                if (e.Key == System.Windows.Input.Key.Escape)
+                    Application.Current.Shutdown(0);
+                //e.Handled = true;
+
+                if (e.Key != System.Windows.Input.Key.Back) return;
+                
+                var window = new Dashboard();
+                window.Show();
+                Hide();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+        }
     }
 }

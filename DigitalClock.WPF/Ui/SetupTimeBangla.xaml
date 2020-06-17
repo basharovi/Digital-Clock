@@ -9,7 +9,7 @@
          TextOptions.TextRenderingMode="Auto"
         xmlns:local="clr-namespace:DigitalClock.WPF"
         mc:Ignorable="d"
-        WindowStartupLocation="CenterScreen"
+        WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow"
         Title="SetupTime" Height="599" Width="999">
     <Grid>
         <materialDesign:TimePicker Name="FajrTimePicker" Is24Hours="False" SelectedTimeFormat="Short" Height="46" Margin="124,66,716,456" FontSize="25" KeyDown="TimePicker_KeyDown"/>

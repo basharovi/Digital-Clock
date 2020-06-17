@@ -46,7 +46,6 @@ E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.cs
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.csproj.CopyComplete
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.exe
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.pdb
-E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.csprojAssemblyReference.cache
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\DisplayClockBangla.baml
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\DisplayClockBangla.g.cs
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\SetupTimeBangla.g.cs

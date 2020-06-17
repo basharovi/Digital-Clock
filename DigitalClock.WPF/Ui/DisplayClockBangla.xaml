@@ -3,13 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
-        Title="Dashboard" Height="550" Width="1049"
-        ResizeMode="CanResize" WindowState="Maximized" WindowStyle="None" WindowStartupLocation="CenterScreen">
+        mc:Ignorable="d" KeyUp="Window_KeyUp"
+        Title="Display Clock" Height="550" Width="1049"
+        WindowState="Maximized" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Viewbox Stretch="Fill">
         <Grid Name="GridView" Margin="0,0,-69,2" Background="LightSkyBlue" Height="670">
 
-            <Label x:Name="DisplayClockBox" Content="03:33:33 PM" HorizontalAlignment="Stretch" Margin="102,209,203,221" VerticalAlignment="Stretch" FontSize="175" FontStyle="Italic" FontFamily="Bookman Old Style"/>
+            <Label x:Name="DisplayClockBox" Content="03:33:33 PM" HorizontalAlignment="Stretch" Margin="146,209,159,221" VerticalAlignment="Stretch" FontSize="160" FontStyle="Italic" FontFamily="Bookman Old Style"/>
             <Label x:Name="DisplayDateBox" Width="475" Margin="181,148,741,457" Content="Sunday, 24 December, 2020" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontWeight="Bold" FontStyle="Italic"/>
             <Label x:Name="FajrTB" Content="ফজর" HorizontalAlignment="Stretch" Margin="186,498,1128,117" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
             <Label x:Name="DuhrTB" Content="যোহর" HorizontalAlignment="Stretch" Margin="342,496,963,118" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
