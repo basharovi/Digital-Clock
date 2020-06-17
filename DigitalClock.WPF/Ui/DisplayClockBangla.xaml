@@ -9,20 +9,20 @@
     <Viewbox Stretch="Fill">
         <Grid Name="GridView" Margin="0,0,-69,2" Background="LightSkyBlue" Height="670">
 
-            <Label x:Name="DisplayClockBox" Content="03:33:33 PM" HorizontalAlignment="Stretch" Margin="146,209,159,221" VerticalAlignment="Stretch" FontSize="160" FontStyle="Italic" FontFamily="Bookman Old Style"/>
+            <Label x:Name="DisplayClockBox" Content="03:33:33 PM" HorizontalAlignment="Stretch" Margin="29,222,39,208" VerticalAlignment="Stretch" FontSize="150" FontStyle="Italic" FontFamily="Bookman Old Style"/>
             <Label x:Name="DisplayDateBox" Width="475" Margin="181,148,741,457" Content="Sunday, 24 December, 2020" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="35" FontWeight="Bold" FontStyle="Italic"/>
-            <Label x:Name="FajrTB" Content="ফজর" HorizontalAlignment="Stretch" Margin="186,498,1128,117" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="DuhrTB" Content="যোহর" HorizontalAlignment="Stretch" Margin="342,496,963,118" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="AsrTB" Content="আসর" HorizontalAlignment="Stretch" Margin="516,498,789,117" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="MagribTB" Content="মাগরিব" HorizontalAlignment="Stretch" Margin="680,498,583,117" VerticalAlignment="Stretch" Height="55" Width="115" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="IshaTB" Content="ইশা" HorizontalAlignment="Stretch" Margin="856,499,454,116" VerticalAlignment="Stretch" Height="55" Width="68" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="FajrTextBox" Content="04:45 AM" HorizontalAlignment="Stretch" Margin="143,548,1085,66" VerticalAlignment="Stretch" Height="55" Width="150" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="DuhrTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="311,550,922,65" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="AsrTextBox" Content="05:15 PM" HorizontalAlignment="Stretch" Margin="485,550,743,64" VerticalAlignment="Stretch" Height="55" Width="150" FontSize="30" RenderTransformOrigin="0.6,0.545" FontWeight="Bold"/>
-            <Label x:Name="MagribTextBox" Content="06:50 PM" HorizontalAlignment="Stretch" Margin="667,550,559,64" VerticalAlignment="Stretch" Height="55" Width="152" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="IchaTextBox" Content="08:45 PM" HorizontalAlignment="Stretch" Margin="832,552,401,63" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="JummaTB" Content="জুম্মা" HorizontalAlignment="Stretch" Margin="1041,500,242,114" VerticalAlignment="Stretch" Height="55" Width="125" FontSize="30" FontWeight="Bold"/>
-            <Label x:Name="JummaTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="1006,550,227,65" VerticalAlignment="Stretch" Height="55" Width="145" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="FajrTB" Content="ফজর" HorizontalAlignment="Stretch" Margin="63,494,1251,121" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="DuhrTB" Content="যোহর" HorizontalAlignment="Stretch" Margin="265,493,1040,122" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="AsrTB" Content="আসর" HorizontalAlignment="Stretch" Margin="479,494,826,121" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="MagribTB" Content="মাগরিব" HorizontalAlignment="Stretch" Margin="701,498,592,117" VerticalAlignment="Stretch" Height="55" Width="115" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="IshaTB" Content="ইশা" HorizontalAlignment="Stretch" Margin="958,500,382,115" VerticalAlignment="Stretch" Height="55" Width="68" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="FajrTextBox" Content="04:45 AM" HorizontalAlignment="Stretch" Margin="15,548,1218,66" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="DuhrTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="229,550,994,65" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="AsrTextBox" Content="05:15 PM" HorizontalAlignment="Stretch" Margin="450,549,768,66" VerticalAlignment="Stretch" Height="55" FontSize="30" RenderTransformOrigin="0.6,0.545" FontWeight="Bold"/>
+            <Label x:Name="MagribTextBox" Content="06:50 PM" HorizontalAlignment="Stretch" Margin="676,550,535,65" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="IchaTextBox" Content="08:45 PM" HorizontalAlignment="Stretch" Margin="910,550,315,65" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="JummaTB" Content="জুম্মা" HorizontalAlignment="Stretch" Margin="1181,500,102,115" VerticalAlignment="Stretch" Height="55" Width="125" FontSize="30" FontWeight="Bold"/>
+            <Label x:Name="JummaTextBox" Content="01:30 PM" HorizontalAlignment="Stretch" Margin="1138,549,86,66" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
             <Label x:Name="DisplayNoticeBox" Content="নোটিশ" Width="600" HorizontalAlignment="Stretch" Margin="86,74,321,541" VerticalAlignment="Stretch" Height="55" FontSize="30" FontWeight="Bold"/>
 
         </Grid>

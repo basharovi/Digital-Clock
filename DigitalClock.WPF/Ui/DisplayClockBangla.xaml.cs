@@ -81,17 +81,17 @@ namespace DigitalClock.WPF.Ui
 
         private void Dt_Tick(object sender, EventArgs e)
         {
-            DisplayClockBox.Content = DateTime.Now.ToString("hh:mm:ss tt");
+            DisplayClockBox.Content = BindAmPm(DateTime.Now.ToString("hh:mm:ss tt"));
         }
 
         private void BindPrayerTimes()
         {
-            FajrTextBox.Content = _scheduleManager.Get("Fajr");
-            DuhrTextBox.Content = _scheduleManager.Get("Duhr");
-            AsrTextBox.Content = _scheduleManager.Get("Asr");
-            MagribTextBox.Content = _scheduleManager.Get("Magrib");
-            IchaTextBox.Content = _scheduleManager.Get("Isha");
-            JummaTextBox.Content = _scheduleManager.Get("Jumma");
+            FajrTextBox.Content = BindAmPm(_scheduleManager.Get("Fajr"));
+            DuhrTextBox.Content = BindAmPm(_scheduleManager.Get("Duhr"));
+            AsrTextBox.Content = BindAmPm(_scheduleManager.Get("Asr"));
+            MagribTextBox.Content = BindAmPm(_scheduleManager.Get("Magrib"));
+            IchaTextBox.Content = BindAmPm(_scheduleManager.Get("Isha"));
+            JummaTextBox.Content = BindAmPm(_scheduleManager.Get("Jumma"));
         }
 
         private void BindColor(dynamic color)
@@ -145,6 +145,15 @@ namespace DigitalClock.WPF.Ui
             {
                 MessageBox.Show(exception.Message);
             }
+        }
+
+        private string BindAmPm(string time)
+        {
+            var modifiedTime = time.Replace("AM", @"পূর্বাহ্ণ");
+
+            modifiedTime = modifiedTime.Replace("PM", @"অপরাহ্ণ");
+
+            return modifiedTime;
         }
     }
 }

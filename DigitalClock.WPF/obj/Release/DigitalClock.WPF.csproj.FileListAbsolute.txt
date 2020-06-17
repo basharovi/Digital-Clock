@@ -50,3 +50,4 @@ E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\DisplayClockBang
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\DisplayClockBangla.g.cs
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\SetupTimeBangla.g.cs
 E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\Ui\SetupTimeBangla.baml
+E:\Bashar Ovi\Office\Team\Clock\DigitalClock.WPF\obj\Release\DigitalClock.WPF.csprojAssemblyReference.cache
