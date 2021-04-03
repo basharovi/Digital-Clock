@@ -338,3 +338,6 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/DigitalClock.WPF/bin
+/DigitalClock.WPF/obj
+/.vs
